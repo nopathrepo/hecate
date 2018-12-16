@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# move into working directory
+cd /etc/hecate/info
+echo "# Enter the administrators for the system below," > admins
+echo "# One username per line" >> admins
+vi admins
+
+echo "\n\n"
+
+while read LINE
+do
+        if [ -s $(grep -i $LINE admins) ]
+        then
+                sudo deluser $LINE sudo
+        else
+                sudo adduser $LINE sudo
+        fi
+done < users.authorized
+cd ..
