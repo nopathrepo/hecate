@@ -4,7 +4,7 @@ cd info
 
 sudo ufw enable
 
-sudo apt install htop
+sudo apt install htop --assume-yes
 
 sudo cp update.template /etc/apt/apt.conf.d/10periodic
 sudo cp update.template /etc/apt/apt.conf.d/20auto-upgrades

@@ -5,12 +5,15 @@ cd info
 # when run with --revert, replaces current login.defs with the previous version
 if [ $1 = "--revert" ] 
 then
-	if [ ! -f login.defs.old] # tests to see if backup file exists
+   # tests to see if backup file exists
+	if [ ! -f login.defs.old] 
 	then
 		echo "login.defs.old was not found. Aborting..."
-	else 			# if it does, replace current login defs with old
+	else 			
+		# if it does, replace current login defs with old
 		sudo cp login.defs.old /etc/login.defs
 	fi
+
 # if not run with --revert, replace the login.defs
 else
 	# save the current login.defs to a backup file, login.defs.old

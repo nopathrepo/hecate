@@ -13,7 +13,7 @@ fgrep -v -f users.authorized /etc/passwd | grep :10[0-9][0-9] > users.deleted
 while read LINE
 do
     for i in $(seq 1 ${#LINE})
-    do
+    do  
         if [ ${LINE:$i:1} = ":" ]
         then
             	sudo deluser ${LINE:0:$i} 

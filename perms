@@ -2,12 +2,14 @@
 
 # move into working directory
 cd info
+
 echo "# Enter the administrators for the system below," > admins
 echo "# One username per line" >> admins
 vi admins
 
 echo "\n\n"
 
+# if authorized user is 
 while read LINE
 do
         if [ -s $(grep -i $LINE admins) ]
@@ -17,4 +19,3 @@ do
                 sudo adduser $LINE sudo
         fi
 done < users.authorized
-cd ..
