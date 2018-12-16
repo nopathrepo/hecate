@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /etc/hecate/info
+cd info
 
 # when run with --revert, replaces current login.defs with the previous version
 if [ $1 = "--revert" ] 
