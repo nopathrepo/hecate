@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# This program removes any unauthorized users present on the system.
+# If a user is not included in the user-defined file users.authorized,
+# it will be removed from the system.
+# 
+
 # move into working directory
 cd info
 
