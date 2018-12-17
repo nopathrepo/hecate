@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Enables Ubuntu firewall, installs htop, and updates apt configuration
+# for auto updates and periodic checks for updates
+
 cd info
 
 sudo ufw enable
