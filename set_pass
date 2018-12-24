@@ -39,18 +39,22 @@ do
 	# only changes passwords if $user isn't current user
 	# me is a file that contains the current user
 	if [ $user != "root"] && [ $user != $(cat me) ]; then
-        echo "$user:$TARGET_PASS" | sudo -S chpasswd
-	echo "$user 's password has been changed"
-	# max password age to 30 days
-	sudo passwd -x 30 $user
-	# warn 7 days before password must be changed
-	sudo passwd -w 7 $user
-	# minimum days between password change,
-	# 0 means they can change at any time
-	sudo passwd -n 0 $user
+   	echo "$user:$TARGET_PASS" | sudo -S chpasswd
+
+		echo "$user 's password has been changed"
 	
-	echo "Updated password age limits for $user."
-    fi
+		# max password age to 30 days
+		sudo passwd -x 30 $user
+
+		# warn 7 days before password must be changed
+		sudo passwd -w 7 $user
+
+		# minimum days between password change,
+		# 0 means they can change at any time
+		sudo passwd -n 0 $user
+	
+		echo "Updated password age limits for $user."
+	fi
 done < users.txt
 
 echo "Password override complete."
