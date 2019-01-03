@@ -27,7 +27,9 @@ else
 	echo "PASS_MAX_DAYS   30" >> login.defs.new
 	echo "PASS_WARN_AGE   7" >> login.defs.new
 
-	# replaces login.defs.new (with appropriate password fields
-	# to appropriate login defs folder
+	: ' 
+	replaces login.defs.new (with appropriate password fields
+	to appropriate login defs folder
+	'
 	sudo cp login.defs.new /etc/login.defs
 fi

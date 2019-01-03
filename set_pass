@@ -8,9 +8,11 @@ read TARGET_PASS
 cd info
 echo "Starting password override..."
 
-# Pulls local user lines from /etc/shadow and stores them in candidates.txt
-# :$6 represents a local user on the computer
-# however, we must isolate the user name (see line 29)
+: '
+Pulls local user lines from /etc/shadow and stores them in candidates.txt
+:$6 represents a local user on the computer
+however, we must isolate the user name (see line 29)
+'
 sudo grep -i ':$6' /etc/shadow > candidates.txt
 
 # reads each line in the created candidates.txt
