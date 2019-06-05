@@ -23,7 +23,7 @@ else
 	egrep -v '^#|^$|PASS' /etc/login.defs > login.defs.new	
 
 	# appends the appropriate password files to login.defs.new
-	echo "PASS_MIN_DAYS   5" >> login.defs.new
+	echo "PASS_MIN_DAYS   0" >> login.defs.new
 	echo "PASS_MAX_DAYS   30" >> login.defs.new
 	echo "PASS_WARN_AGE   7" >> login.defs.new
 
