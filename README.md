@@ -2,7 +2,7 @@
 Hecate is designed to improve the security of Ubuntu 14/16 systems.
 
 ### update ###
-Enables Ubuntu firewall, installs htop, and updates apt configuration to enable
+Enables Ubuntu firewall, installs ```htop```, and updates apt configuration to enable
 auto updates and periodic update checks.
 Update and upgrade the software packages currently installed on the system.
 
@@ -10,7 +10,7 @@ Note: A reboot is recommended after the system update process finishes.
 
 ### set_pass ###
 Replaces all existing users passwords (except root password) with a
-user-defined password. 
+user-defined password.
 The max password age, minimum days between password change, and warn before
 password change options are also set as follows:
 - Max Password Age = 30 days
@@ -26,7 +26,7 @@ entered at run-time.
 A log of deleted users is stored in users.deleted.
 
 ### guest ###
-Disabes the guest account on LightDM. Does not work on Ubuntu versions past
+Disables the guest account on LightDM. Does not work on Ubuntu versions past
 16.04 LTS.
 
 ### logindefs ###
@@ -45,6 +45,3 @@ sudo if they are a member and should not be.
 
 ### info (directory) ###
 Required by update script. Contains update.template. See update section for more info.
-
-
-
