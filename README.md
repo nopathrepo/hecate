@@ -1,9 +1,6 @@
 # hecate
 Hecate is designed to improve the security of Ubuntu 14/16 systems.
 
-Note that auth should be run before perms, as auth creates a dependency
-file for perms.
-
 ### update ###
 Enables Ubuntu firewall, installs htop, and updates apt configuration to enable
 auto updates and periodic update checks.
