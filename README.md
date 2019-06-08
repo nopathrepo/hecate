@@ -7,9 +7,9 @@ All scripts should be able to be run with ```./scriptname``` assuming that you a
 ### update ###
 Enables Ubuntu firewall, installs ```htop```, and updates apt configuration to enable
 auto updates and periodic update checks.
-Update and upgrade the software packages currently installed on the system.
+Updates and upgrades the software packages currently installed on the system.
 
-Note: A reboot is recommended after the system update process finishes.
+Note: A reboot is recommended after the system update process finishes. Additionally, you can double check that the firewall is on with the ```gufw``` GUI firewall package. If it's not currently installed on the system, ```sudo apt-get install gufw``` will install it, and you can run it by typing ```gufw``` into a terminal.
 
 ### set_pass ###
 Replaces all existing users passwords (except root password) with a
