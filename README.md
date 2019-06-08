@@ -1,5 +1,5 @@
 # hecate
-Hecate is designed to improve the security of Ubuntu 14/16 systems.
+Hecate is designed to improve the security of Ubuntu 14/16 systems. It is a good idea to look at the code in each one of the scripts before you run them. That way, you can get an idea of if there will be any conflicts with whatever version of Ubuntu you're running, such as deprecated commands and/or functionality.
 
 ## Usage
 All scripts should be able to be run with ```./scriptname``` assuming that you are ```cd```'d into the hecate directory. If for some reason you cannot execute a script, running ```chmod +x scriptname``` should allow you to run it. Alternatively, ```sh scriptname``` or ```bash scriptname``` should work, but this may vary depending on the system.
